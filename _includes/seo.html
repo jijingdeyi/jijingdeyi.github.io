@@ -85,18 +85,37 @@
   <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
 {% endif %}
 
-{% if site.social %}
+{% if site.social or site.data.identity %}
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
+      "@context" : "https://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
+      "name" : {{ site.data.identity.name | default: site.social.name | default: site.name | jsonify }},
       "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      {% if site.data.identity.tagline %}"description" : {{ site.data.identity.tagline | jsonify }},{% endif %}
+      "sameAs" : [
+        {%- assign same_as_first = true -%}
+        {%- if site.data.identity -%}
+          {%- for group in site.data.identity.groups -%}
+            {%- for link in group.links -%}
+              {%- if link.enabled and link.url and link.url != "" -%}
+                {%- unless same_as_first -%},{%- endunless -%}
+                {{ link.url | jsonify }}
+                {%- assign same_as_first = false -%}
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        {%- elsif site.social.links -%}
+          {%- for link in site.social.links -%}
+            {%- unless same_as_first -%},{%- endunless -%}
+            {{ link | jsonify }}
+            {%- assign same_as_first = false -%}
+          {%- endfor -%}
+        {%- endif -%}
+      ]
     }
   </script>
 {% endif %}
-
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}

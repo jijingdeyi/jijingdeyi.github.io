@@ -4,20 +4,27 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
+{% assign profile_name = author.name %}
+{% assign profile_bio = author.bio %}
+{% if site.data.identity %}
+  {% assign profile_name = site.data.identity.display_name | default: site.data.identity.name | default: author.name %}
+  {% assign profile_bio = site.data.identity.tagline | default: author.bio %}
+{% endif %}
+
 <div itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
+    	<img src="{{ author.avatar }}" alt="{{ profile_name }}"  fetchpriority="high" />
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
+    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ profile_name }}"  fetchpriority="high" />
     {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name" itemprop="name">{{ profile_name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    {% if profile_bio %}<p class="author__bio" itemprop="description">{{ profile_bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">

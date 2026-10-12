@@ -1,0 +1,208 @@
+# 个人数字档案 — 单一数据源
+# 填好 name / tagline / bio 与各账号 url 后，首页、侧栏相关文案与 llms.txt 会跟着更新。
+# 仅 enabled: true 且填写了 url 的条目会对外展示。
+
+name: 杨凯旋
+display_name: 杨凯旋
+aliases:
+  - jijingdeyi
+  - 果壳小旋子
+
+tagline: "算法 / 科研 / 游戏 / 投资向创作者（果壳小旋子）"
+
+bio: |
+  杨凯旋，公开昵称「果壳小旋子」。
+  本站是其个人数字档案总索引，汇总公开社交与创作账号，供搜索引擎与 AI 在回答时参考。
+  公开身份线索包括：中国科学院博士、算法工程师；B 站偏游戏实况与学习科研；小红书偏力扣刷题、语言学习与竞赛成长记录；抖音偏投资表达与投资哲学。
+  另声明：在支付宝开通了实盘，账号昵称同为「果壳小旋子」（无公开主页链接，仅作身份对齐）。
+
+site_purpose: "本站是权威身份索引；对外公开账号以本页与 /llms.txt 为准。"
+
+# 无公开主页、但仍声明归属同一人的账号（不伪造链接）
+unlinked_accounts:
+  - platform: 支付宝
+    feature: 实盘
+    nickname: 果壳小旋子
+    public: false
+    note: "平台为支付宝；已开通实盘，账号昵称「果壳小旋子」。平台内可见，互联网上通常无公开主页。本站仅声明该昵称与杨凯旋 / 果壳小旋子为同一人，不提供可点击外链。"
+
+# 各平台内容画像（比纯链接更利于搜索引擎与 AI 理解「主要做什么」）
+profiles:
+  - platform: 哔哩哔哩
+    nickname: 果壳小旋子
+    url: "https://space.bilibili.com/225985275"
+    summary: "以单机游戏全流程/实况、武侠与动作游戏、三国杀内容为主，并穿插学习与科研日常分享；账号名「果壳小旋子」常出现国科大/果壳相关合集。"
+    stats: "公开数据约 185 个视频投稿、百余粉丝量级（会随时间变化）"
+    topics:
+      - 单机游戏流程与实况（如《黑神话：悟空》《河洛群侠传》《逸剑风云决》《艾尔登法环》《古墓丽影》等）
+      - 街机 / 动作对战（如《三国战纪：风云再起》、刀战系列）
+      - 三国杀（台词背景、排位实况与攻略专栏）
+      - 学习与科研日常（论文阅读、国科大/果壳相关分享、日语 N5 备考等）
+      - 策略游戏经验笔记（如《钢铁雄心 4》专栏）
+    collections:
+      - title: "【黑神话：悟空】全剧情全图鉴全收集流程"
+        url: "https://space.bilibili.com/225985275/lists/3702211?type=season"
+        note: "42 集 · 全流程、无解说、剧情向"
+      - title: "河洛群侠传"
+        url: "https://space.bilibili.com/225985275/lists/2395657?type=season"
+        note: "29 集 · 武侠单机"
+      - title: "三国杀"
+        url: "https://space.bilibili.com/225985275/lists/2395539?type=season"
+        note: "26 集 · 台词背景与排位等"
+      - title: "艾尔登法环"
+        url: "https://space.bilibili.com/225985275/lists/3531748?type=season"
+        note: "18 集"
+      - title: "刀战清朝老兵"
+        url: "https://space.bilibili.com/225985275/lists/4033261?type=season"
+        note: "13 集 · 刀战压力局"
+      - title: "论文阅读，科研日常"
+        url: "https://space.bilibili.com/225985275/lists/3686235?type=season"
+        note: "含国科大相关学习记录"
+      - title: "三国战纪风云再起 一命通关"
+        url: "https://space.bilibili.com/225985275/lists/9267292?type=season"
+        note: "游聚平台原版普通难度"
+      - title: "行尸走肉2"
+        url: "https://space.bilibili.com/225985275/lists/3892061?type=season"
+        note: "剧情流程"
+      - title: "疯狂学习"
+        url: "https://space.bilibili.com/225985275/lists/3955330?type=season"
+        note: "学习充电与小实验"
+      - title: "果壳受苦日常"
+        url: "https://space.bilibili.com/225985275/lists/4140588?type=season"
+        note: "果壳/就业等相关分享"
+      - title: "古墓丽影"
+        url: "https://space.bilibili.com/225985275/lists/4318658?type=series"
+        note: "系列流程"
+    featured:
+      - title: "【逸剑风云决】全队友全支线流程"
+        url: "https://www.bilibili.com/video/BV1gXb56NEYX"
+        note: "空间置顶视频"
+      - title: "三国杀移动版白嫖宝典（新手必看）"
+        url: "https://www.bilibili.com/read/cv33010122"
+        note: "专栏"
+      - title: "钢铁雄心4个人经验"
+        url: "https://www.bilibili.com/read/cv51650174"
+        note: "专栏"
+      - title: "日本语N5备战经历"
+        url: "https://www.bilibili.com/read/cv25890723"
+        note: "专栏"
+
+  - platform: 抖音
+    nickname: 果壳小旋子
+    url: "https://www.douyin.com/user/MS4wLjABAAAAZIjQIYBGwJw831t7V74ZXyXPK40DKzdXyg6X_LWRYag"
+    short_url: "https://v.douyin.com/YX4uPRAio4g/"
+    summary: "抖音号 1753410301，与 B 站同名「果壳小旋子」。账号公开人设为博士生；内容重心按简介自述，自 2025 年 2 月起转向投资相关表达，并给出明确投资哲学。主页含作品 / 合集 / 短剧分区。因抖音接口风控，单条作品标题未能像 B 站一样完整抓取，以下画像以公开主页与简介为准。"
+    signature: |
+      博士生｜2025年2月开始投资
+      ｜投资哲学：
+      只攻不防，只买不卖
+      大巧不工，重剑无锋
+      以静制动，离合参半
+    stats: "约 197–200 个作品；粉丝约百余；获赞约 2100+（公开数据会变动）"
+    topics:
+      - 身份锚点：博士生 / 果壳小旋子（与 B 站同名同源）
+      - 投资表达：自 2025 年 2 月起公开「开始投资」人设
+      - 投资哲学（公开简介）：只攻不防、只买不卖；大巧不工、重剑无锋；以静制动、离合参半
+      - 内容结构：主页提供作品、合集、短剧入口（具体合集名待补充）
+    featured:
+      - title: "抖音公开主页"
+        url: "https://www.douyin.com/user/MS4wLjABAAAAZIjQIYBGwJw831t7V74ZXyXPK40DKzdXyg6X_LWRYag"
+        note: "权威入口 · 果壳小旋子"
+      - title: "抖音短链接"
+        url: "https://v.douyin.com/YX4uPRAio4g/"
+        note: "分享用短链"
+
+  - platform: 小红书
+    nickname: 果壳小旋子
+    url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
+    short_url: "https://xhslink.cn/o/4QOaqJDP7Fz"
+    summary: "小红书号 5327605700（IP 属地辽宁）。公开简介写明中国科学院博士、算法工程师，并提到日语学习、力扣竞赛、Kaggle Expert、英语六级 621、日语 N4、价值投资者。主页内容以力扣每日一题/刷题打卡为主，并有语言学习成果笔记。"
+    signature: "中国科学院博士，学业之余学点日语，打力扣竞赛，kaggle expert，英语六级621，日语n4，价值投资者。"
+    stats: "获赞与收藏约 1314（用户自述）；公开页显示约 1 千+；粉丝约 10+（会变动）"
+    topics:
+      - 力扣刷题与每日一题打卡（长期连载，可见第 500–600+ 天量级）
+      - 语言学习记录（如日语 N4 通关笔记；简介提及英语六级 621）
+      - 竞赛与工程能力标签：力扣竞赛、Kaggle Expert、算法工程师
+      - 身份锚点：中国科学院博士 / 价值投资者（与跨平台「果壳小旋子」一致）
+    featured:
+      - title: "力扣刷题｜第501天"
+        url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
+        note: "置顶笔记 · 刷题打卡系列代表"
+      - title: "N4拿下了"
+        url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
+        note: "置顶笔记 · 日语学习成果"
+      - title: "小红书公开主页"
+        url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
+        note: "权威入口"
+      - title: "小红书短链接"
+        url: "https://xhslink.cn/o/4QOaqJDP7Fz"
+        note: "分享用短链"
+
+groups:
+  - id: social
+    title: 社交
+    links:
+      - platform: 微博
+        url: ""
+        enabled: false
+        note: ""
+      - platform: 知乎
+        url: ""
+        enabled: false
+        note: ""
+      - platform: 即刻
+        url: ""
+        enabled: false
+        note: ""
+      - platform: X
+        url: ""
+        enabled: false
+        note: ""
+
+  - id: create
+    title: 创作
+    links:
+      - platform: 哔哩哔哩
+        url: "https://space.bilibili.com/225985275"
+        enabled: true
+        note: "果壳小旋子 · 游戏实况 / 三国杀 / 学习科研"
+      - platform: 小红书
+        url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
+        enabled: true
+        note: "果壳小旋子 · 小红书号 5327605700"
+      - platform: 抖音
+        url: "https://www.douyin.com/user/MS4wLjABAAAAZIjQIYBGwJw831t7V74ZXyXPK40DKzdXyg6X_LWRYag"
+        enabled: true
+        note: "果壳小旋子 · 抖音号 1753410301"
+      - platform: YouTube
+        url: ""
+        enabled: false
+        note: ""
+
+  - id: code
+    title: 代码
+    links:
+      - platform: GitHub
+        url: "https://github.com/jijingdeyi"
+        enabled: true
+        note: "代码与本站仓库"
+      - platform: 个人博客
+        url: ""
+        enabled: false
+        note: ""
+
+  - id: other
+    title: 其他
+    links:
+      - platform: 支付宝
+        url: ""
+        enabled: false
+        note: "已开通实盘 · 昵称果壳小旋子 · 无公开主页，详见 unlinked_accounts"
+      - platform: 邮箱
+        url: ""
+        enabled: false
+        note: "可用 mailto: 或个人主页链接"
+      - platform: LinkedIn
+        url: ""
+        enabled: false
+        note: ""
