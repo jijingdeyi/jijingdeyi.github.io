@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Identity archive — homepage & platform pages
+   Keeps Academic Pages tokens; adds clearer hierarchy and spacing.
+   ========================================================================== */
+
+:root {
+  --id-ink: #1f2a30;
+  --id-muted: #5c6b73;
+  --id-line: #e4e8ea;
+  --id-soft: #f6f8f9;
+  --id-accent: #2f7f93;
+  --id-accent-soft: rgba(47, 127, 147, 0.08);
+  --id-radius: 10px;
+}
+
+.page__content {
+  color: var(--id-ink);
+  line-height: 1.75;
+}
+
+.page__content > p {
+  margin: 0 0 1em;
+}
+
+/* —— Home —— */
+.identity-home {
+  max-width: 42rem;
+}
+
+.identity-home__lead {
+  font-size: 1.05rem;
+  color: var(--id-ink);
+}
+
+.identity-home__tagline {
+  margin: 0.35rem 0 1.75rem;
+  color: var(--id-accent);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.identity-home__section-title {
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--id-line);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--id-muted);
+}
+
+.identity-card-list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.identity-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin: 0;
+  padding: 0.95rem 1.1rem;
+  border: 1px solid var(--id-line);
+  border-left: 3px solid var(--id-accent);
+  border-radius: var(--id-radius);
+  background: var(--id-soft);
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.identity-card:hover {
+  background: #fff;
+  border-color: mix(#fff, #2f7f93, 70%);
+  transform: translateY(-1px);
+}
+
+.identity-card__main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.identity-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--id-ink);
+  text-decoration: none;
+}
+
+.identity-card__title:hover {
+  color: var(--id-accent);
+}
+
+.identity-card__blurb {
+  margin: 0;
+  color: var(--id-muted);
+  font-size: 0.92rem;
+}
+
+.identity-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.85rem;
+  font-size: 0.88rem;
+}
+
+.identity-card__links a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.identity-card__links a:hover {
+  border-bottom-color: currentColor;
+}
+
+.identity-note {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--id-radius);
+  background: var(--id-accent-soft);
+  color: var(--id-muted);
+  font-size: 0.92rem;
+}
+
+.identity-home__foot {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--id-line);
+  color: var(--id-muted);
+  font-size: 0.92rem;
+}
+
+/* —— Platform detail —— */
+.platform-page {
+  max-width: 44rem;
+}
+
+.platform-page__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin: 0 0 1.35rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--id-radius);
+  background: var(--id-soft);
+  border: 1px solid var(--id-line);
+  font-size: 0.92rem;
+}
+
+.platform-page__meta a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.platform-page__meta a:hover {
+  text-decoration: underline;
+}
+
+.platform-page__nickname {
+  color: var(--id-muted);
+}
+
+.platform-section {
+  margin: 0 0 1.6rem;
+}
+
+.platform-section__label {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--id-muted);
+}
+
+.platform-section__body {
+  margin: 0;
+}
+
+.platform-section__body p {
+  margin: 0 0 0.9em;
+}
+
+.platform-section__body p:last-child {
+  margin-bottom: 0;
+}
+
+.platform-quote {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--id-accent);
+  border-radius: 0 var(--id-radius) var(--id-radius) 0;
+  background: var(--id-soft);
+  color: var(--id-ink);
+  white-space: pre-wrap;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.platform-stats {
+  margin: 0;
+  color: var(--id-muted);
+  font-size: 0.95rem;
+}
+
+.platform-list {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.platform-list li {
+  margin: 0.35rem 0;
+}
+
+.platform-rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid var(--id-line);
+  border-radius: var(--id-radius);
+  overflow: hidden;
+}
+
+.platform-rows li {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--id-line);
+  background: #fff;
+}
+
+.platform-rows li:first-child {
+  border-top: 0;
+}
+
+.platform-rows a {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--id-ink);
+}
+
+.platform-rows a:hover {
+  color: var(--id-accent);
+}
+
+.platform-rows__note {
+  color: var(--id-muted);
+  font-size: 0.88rem;
+}
+
+.platform-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.platform-switch a {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--id-line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--id-muted);
+  font-size: 0.84rem;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.platform-switch a:hover,
+.platform-switch a.is-active {
+  border-color: var(--id-accent);
+  background: var(--id-accent-soft);
+  color: var(--id-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .identity-card {
+    padding: 0.85rem 0.95rem;
+  }
+
+  .platform-page__meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

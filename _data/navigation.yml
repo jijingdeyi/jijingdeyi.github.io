@@ -1,11 +1,20 @@
-# 顶栏导航
+# 顶栏：每个账号单独一页，像标签一样切换
 
 main:
   - title: "关于"
     url: /
 
-  - title: "账号"
-    url: /accounts/
+  - title: "哔哩哔哩"
+    url: /bilibili/
+
+  - title: "CSDN"
+    url: /csdn/
+
+  - title: "小红书"
+    url: /xiaohongshu/
+
+  - title: "抖音"
+    url: /douyin/
 
   - title: "llms.txt"
     url: /llms.txt

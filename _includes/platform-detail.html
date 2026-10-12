@@ -1,0 +1,89 @@
+{% assign profile = nil %}
+{% for p in site.data.identity.profiles %}
+  {% if p.id == include.id %}
+    {% assign profile = p %}
+  {% endif %}
+{% endfor %}
+
+{% if profile %}
+<div class="platform-page">
+
+  <nav class="platform-switch" aria-label="账号切换">
+    {% for p in site.data.identity.profiles %}
+      <a href="{{ "/" | append: p.id | append: "/" | relative_url }}"{% if p.id == profile.id %} class="is-active" aria-current="page"{% endif %}>{{ p.platform }}</a>
+    {% endfor %}
+  </nav>
+
+  <div class="platform-page__meta">
+    <a href="{{ profile.url }}">打开{{ profile.platform }}主页</a>
+    {% if profile.short_url %}
+      <span>·</span>
+      <a href="{{ profile.short_url }}">短链</a>
+    {% endif %}
+    <span class="platform-page__nickname">昵称 {{ profile.nickname }}</span>
+  </div>
+
+  <section class="platform-section">
+    <h2 class="platform-section__label">这个账号做什么</h2>
+    <div class="platform-section__body">
+      {{ profile.summary | markdownify }}
+    </div>
+  </section>
+
+  {% if profile.signature %}
+  <section class="platform-section">
+    <h2 class="platform-section__label">公开简介</h2>
+    <blockquote class="platform-quote">{{ profile.signature | strip }}</blockquote>
+  </section>
+  {% endif %}
+
+  {% if profile.stats %}
+  <section class="platform-section">
+    <h2 class="platform-section__label">规模</h2>
+    <p class="platform-stats">{{ profile.stats }}</p>
+  </section>
+  {% endif %}
+
+  {% if profile.topics %}
+  <section class="platform-section">
+    <h2 class="platform-section__label">内容方向</h2>
+    <ul class="platform-list">
+      {% for topic in profile.topics %}
+        <li>{{ topic }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if profile.collections %}
+  <section class="platform-section">
+    <h2 class="platform-section__label">合集 / 专栏</h2>
+    <ul class="platform-rows">
+      {% for item in profile.collections %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          {% if item.note %}<div class="platform-rows__note">{{ item.note }}</div>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if profile.featured %}
+  <section class="platform-section">
+    <h2 class="platform-section__label">可以先看</h2>
+    <ul class="platform-rows">
+      {% for item in profile.featured %}
+        <li>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          {% if item.note %}<div class="platform-rows__note">{{ item.note }}</div>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+</div>
+{% else %}
+<p>未找到对应账号（id: <code>{{ include.id }}</code>）。</p>
+{% endif %}

@@ -1,6 +1,5 @@
 # 个人数字档案 — 单一数据源
-# 改这里即可更新首页与 /llms.txt
-# 仅 enabled: true 且填写了 url 的条目会显示在账号列表
+# 改这里即可更新首页、各账号页与 /llms.txt
 
 name: 杨凯旋
 display_name: 杨凯旋
@@ -17,7 +16,6 @@ bio: |
 
 site_purpose: "这是杨凯旋（果壳小旋子）的个人主页索引。要认账号，以本站列出的链接为准。"
 
-# 没有公开主页、但本人确认是自己的账号
 unlinked_accounts:
   - platform: 支付宝
     feature: 实盘
@@ -31,87 +29,126 @@ profiles:
     nickname: 果壳小旋子
     url: "https://space.bilibili.com/225985275"
     blurb: "游戏流程、三国杀与学习向视频"
-    summary: "主要发单机游戏流程和实况，也会写三国杀、学习与科研相关内容。"
-    stats: "大约一百八十多个视频"
+    summary: |
+      这是我发视频最多的地方。UID `225985275`，昵称「果壳小旋子」。
+
+      主体内容是单机游戏：喜欢把一款游戏从头到尾录完整，做成合集。既有《黑神话：悟空》这种全剧情、全图鉴、全收集的长流程，也有《河洛群侠传》《逸剑风云决》一类武侠向单机，以及《艾尔登法环》《古墓丽影》《行尸走肉》等。街机和对战也会发，比如《三国战纪：风云再起》一命通关、刀战压力局。
+
+      另外一块是三国杀：有台词背景解读、排位实况，也有专栏攻略。学习向内容也在这里留档，包括论文阅读、国科大/果壳相关日常、日语备考，以及《钢铁雄心 4》这类策略游戏笔记。
+
+      风格上偏「自己玩完再整理」：很多流程合集是无解说、剧情向，方便回看和检索。
+    stats: "投稿约 185 个视频；粉丝约百余量级（会随时间变化）"
     topics:
-      - 单机流程与实况：《黑神话：悟空》《河洛群侠传》《逸剑风云决》《艾尔登法环》《古墓丽影》等
-      - 街机与对战：《三国战纪：风云再起》、刀战
-      - 三国杀：台词背景、排位与攻略
-      - 学习与日常：论文阅读、日语备考、《钢铁雄心 4》笔记等
+      - 单机长流程 / 全收集实况：黑神话悟空、河洛群侠传、逸剑风云决、艾尔登法环、古墓丽影、行尸走肉等
+      - 街机与动作对战：三国战纪风云再起一命通关、刀战压力局系列
+      - 三国杀：台词背景系列、排位录像、新手向攻略专栏
+      - 学习与科研日常：论文阅读合集、国科大/果壳相关分享、日语 N5 备考经历
+      - 策略与杂记：钢铁雄心 4 个人经验、学习充电类短内容
     collections:
       - title: "【黑神话：悟空】全剧情全图鉴全收集流程"
         url: "https://space.bilibili.com/225985275/lists/3702211?type=season"
-        note: "42 集"
+        note: "42 集 · 无解说、剧情向全流程"
       - title: "河洛群侠传"
         url: "https://space.bilibili.com/225985275/lists/2395657?type=season"
-        note: "29 集"
+        note: "29 集 · 武侠单机相关片段与内容"
       - title: "三国杀"
         url: "https://space.bilibili.com/225985275/lists/2395539?type=season"
-        note: "26 集"
+        note: "26 集 · 台词背景、排位等"
       - title: "艾尔登法环"
         url: "https://space.bilibili.com/225985275/lists/3531748?type=season"
         note: "18 集"
       - title: "刀战清朝老兵"
         url: "https://space.bilibili.com/225985275/lists/4033261?type=season"
-        note: "13 集"
+        note: "13 集 · 刀战压力局"
       - title: "论文阅读，科研日常"
         url: "https://space.bilibili.com/225985275/lists/3686235?type=season"
-        note: ""
+        note: "含国科大相关学习记录"
       - title: "三国战纪风云再起 一命通关"
         url: "https://space.bilibili.com/225985275/lists/9267292?type=season"
-        note: ""
+        note: "游聚平台原版 · 普通难度"
+      - title: "行尸走肉2"
+        url: "https://space.bilibili.com/225985275/lists/3892061?type=season"
+        note: "剧情流程"
+      - title: "疯狂学习"
+        url: "https://space.bilibili.com/225985275/lists/3955330?type=season"
+        note: "学习充电、小实验等"
       - title: "果壳受苦日常"
         url: "https://space.bilibili.com/225985275/lists/4140588?type=season"
-        note: ""
+        note: "果壳 / 就业等相关分享"
       - title: "古墓丽影"
         url: "https://space.bilibili.com/225985275/lists/4318658?type=series"
-        note: ""
+        note: "系列流程"
     featured:
       - title: "【逸剑风云决】全队友全支线流程"
         url: "https://www.bilibili.com/video/BV1gXb56NEYX"
-        note: "置顶"
+        note: "空间置顶 · 武侠单机长流程"
       - title: "三国杀移动版白嫖宝典（新手必看）"
         url: "https://www.bilibili.com/read/cv33010122"
-        note: "专栏"
+        note: "专栏 · 新手向资源与日常领取整理"
       - title: "钢铁雄心4个人经验"
         url: "https://www.bilibili.com/read/cv51650174"
-        note: "专栏"
+        note: "专栏 · 策略游戏思路笔记"
       - title: "日本语N5备战经历"
         url: "https://www.bilibili.com/read/cv25890723"
-        note: "专栏"
+        note: "专栏 · 日语备考过程与教材选择"
 
   - id: csdn
     platform: CSDN
     nickname: 果壳小旋子
     url: "https://blog.csdn.net/m0_47867419"
     blurb: "机器学习 / 视觉 / Kaggle 技术笔记"
-    summary: "技术博客，多写机器学习、计算机视觉、扩散模型，以及 Kaggle 赛题与方案笔记。公开资料显示就职于博世苏州。"
+    summary: |
+      CSDN 博主页：https://blog.csdn.net/m0_47867419 ，昵称同样是「果壳小旋子」。码龄约 6 年（约 2020 年加入）。
+
+      这里主要写技术向长文：机器学习、计算机视觉、深度学习里的经典结构与论文笔记，以及 Kaggle 比赛的赛题拆解和方案复盘。公开主页兴趣领域偏人工智能、计算机视觉、深度学习、神经网络；专栏里能看到「机器学习」「图像融合」「Restormer」等系列。
+
+      近期更新里，Kaggle / NeurIPS 相关赛题分析比较多，例如行星数据挑战、高分子预测、传感器行为识别、细菌鞭毛马达定位、地震波形反演、Drawing with LLMs 等。也会写更基础的原理文，比如 Layer Normalization、Transformer 自注意力、扩散模型（DDPM）入门与代码赏析，以及多模态融合方向的论文笔记。
+
+      公开资料显示目前就职于博世苏州；个人简介是「努力的小旋子，幸运的小旋子」。
     signature: "努力的小旋子，幸运的小旋子"
-    stats: "原创约 64 篇；访问量约 17 万；粉丝约 140"
+    stats: "原创约 64 篇；总访问量约 17 万；粉丝约 140；获赞约 245、收藏约 1045（公开页数据，会变动）"
     topics:
-      - Kaggle 赛题分析与金牌方案笔记
-      - 扩散模型、Transformer、多模态融合等论文与代码笔记
-      - 专栏方向：机器学习、图像融合、Restormer 等
+      - Kaggle 赛题分析：读懂任务设定、评价指标与常见基线，再整理公开强解法
+      - 竞赛复盘：例如细菌鞭毛马达定位金牌方案、Drawing with LLMs 金牌方案等
+      - 生成模型：扩散模型原理、DDPM sampler、从噪声生成样本的代码笔记
+      - 表征与结构：Transformer 自注意力、Layer Normalization、Swin Transformer 适配新任务等
+      - 多模态与视觉：多模态融合中的不确定性、布局语义融合、图像融合 / Restormer 相关专栏
+      - 工程碎笔记：Kaggle packages 用法、简单算法实现等
     collections:
       - title: "机器学习"
         url: "https://blog.csdn.net/m0_47867419"
-        note: "专栏"
+        note: "约 29 篇 · 主系列专栏"
       - title: "图像融合"
         url: "https://blog.csdn.net/m0_47867419"
-        note: "专栏"
+        note: "约 20 篇"
       - title: "Restormer"
         url: "https://blog.csdn.net/m0_47867419"
-        note: "专栏"
+        note: "约 5 篇"
     featured:
       - title: "Layer Normalization（层规范化）"
         url: "https://blog.csdn.net/m0_47867419"
-        note: "阅读较多的一篇"
-      - title: "【kaggle】NeurIPS - Ariel Data Challenge 2025 赛题分析"
+        note: "原理向 · 阅读量较高"
+      - title: "#20 【kaggle】NeurIPS - Ariel Data Challenge 2025 赛题分析"
         url: "https://blog.csdn.net/m0_47867419"
-        note: "近期赛题笔记"
-      - title: "重新认识Transformer中的自注意力机制"
+        note: "行星数据挑战赛题介绍"
+      - title: "#19【kaggle】NeurIPS - Open Polymer Prediction 2025 赛题分析"
         url: "https://blog.csdn.net/m0_47867419"
-        note: ""
+        note: "高分子性质预测赛题"
+      - title: "#16 [Kaggle] 定位细菌鞭毛马达2025——金牌方案赏析"
+        url: "https://blog.csdn.net/m0_47867419"
+        note: "竞赛强解法复盘"
+      - title: "#14 【Kaggle】 Drawing with LLMs 金牌方案赏析"
+        url: "https://blog.csdn.net/m0_47867419"
+        note: "用大模型画 SVG 的方案笔记"
+      - title: "#10 重新认识Transformer中的自注意力机制"
+        url: "https://blog.csdn.net/m0_47867419"
+        note: "自注意力机制深入说明"
+      - title: "#1【NeurIPS 2020】降噪扩散模型原理Diffusion"
+        url: "https://blog.csdn.net/m0_47867419"
+        note: "扩散模型入门"
+      - title: "#13【CVPR2024】多模态融合中的不确定性"
+        url: "https://blog.csdn.net/m0_47867419"
+        note: "多模态论文笔记"
 
   - id: xiaohongshu
     platform: 小红书
@@ -119,20 +156,35 @@ profiles:
     url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
     short_url: "https://xhslink.cn/o/4QOaqJDP7Fz"
     blurb: "力扣打卡与学习记录"
-    summary: "小红书号 5327605700。简介里写着中科院博士、算法工程师、力扣竞赛、Kaggle Expert、日语 N4、价值投资等。主页主要是力扣打卡，也会记语言学习。"
+    summary: |
+      小红书号 `5327605700`，主页：https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719 。
+
+      公开简介把自己写成：中国科学院博士、算法工程师；学业之外学日语、打力扣竞赛，自称 Kaggle Expert；英语六级 621，日语 N4；同时也写「价值投资者」。职业标签显示为算法工程师，IP 属地辽宁。
+
+      时间线上最显眼的是力扣长期打卡：大量「力扣每日一题｜第 xxx 天」笔记，连载已经到 500–600+ 天量级，置顶里还有「力扣刷题｜第501天」。另一条置顶是「N4拿下了」，对应日语学习成果。整体风格很像「把每天练过的东西留下来」，偏短、频、可追溯。
+
+      赞与收藏合计大约 1314（本人统计）；公开页大约显示为一千加。粉丝量不大，内容更像给自己和同路人看的学习账本，而不是运营型账号。
     signature: "中国科学院博士，学业之余学点日语，打力扣竞赛，kaggle expert，英语六级621，日语n4，价值投资者。"
-    stats: "赞与收藏大约 1314"
+    stats: "赞与收藏约 1314；粉丝约 10+（公开页量级，会变动）"
     topics:
-      - 力扣每日一题 / 长期刷题打卡
-      - 日语等语言学习记录
-      - 竞赛与算法相关日常
+      - 力扣每日一题：按天编号的刷题记录，形成很长的连续打卡序列
+      - 刷题阶段节点：例如置顶的「第501天」这类里程碑笔记
+      - 语言学习：日语 N4 通关记录；简介也提到英语六级成绩
+      - 能力标签自述：力扣竞赛、Kaggle Expert、算法工程师、价值投资
+      - 内容形态：短笔记为主，适合快速翻到某一天的题或某次通关节点
     featured:
       - title: "力扣刷题｜第501天"
         url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
-        note: "置顶"
+        note: "置顶 · 刷题里程碑"
       - title: "N4拿下了"
         url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
-        note: "置顶"
+        note: "置顶 · 日语 N4"
+      - title: "力扣每日一题系列"
+        url: "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
+        note: "主页可见第 590–620+ 天等连续更新"
+      - title: "小红书短链接"
+        url: "https://xhslink.cn/o/4QOaqJDP7Fz"
+        note: "分享用"
 
   - id: douyin
     platform: 抖音
@@ -140,24 +192,38 @@ profiles:
     url: "https://www.douyin.com/user/MS4wLjABAAAAZIjQIYBGwJw831t7V74ZXyXPK40DKzdXyg6X_LWRYag"
     short_url: "https://v.douyin.com/YX4uPRAio4g/"
     blurb: "投资相关表达"
-    summary: "抖音号 1753410301。简介里写自己是博士生，2025 年 2 月开始投资，并写了几句投资想法。"
+    summary: |
+      抖音号 `1753410301`，昵称「果壳小旋子」，与 B 站、小红书、CSDN 同名。
+
+      公开简介把自己定位成博士生，并写明「2025 年 2 月开始投资」。下面附了一段投资哲学，偏态度和原则，而不是荐股：
+
+      - 只攻不防，只买不卖
+      - 大巧不工，重剑无锋
+      - 以静制动，离合参半
+
+      主页有作品、合集、短剧等分区；作品量大约两百个，获赞大约两千左右，粉丝大约一百出头。因为抖音对作品列表抓取限制较多，这里无法像 B 站那样逐条罗列视频标题，但账号人设和简介是明确公开的：同一套「果壳小旋子」身份，在抖音侧更突出投资表达。
+
+      若要对照其他平台：算法/科研细节更多看 CSDN 与小红书；游戏与长视频更多看 B 站；抖音适合看他如何用短内容谈投资原则。
     signature: |
       博士生｜2025年2月开始投资
       ｜投资哲学：
       只攻不防，只买不卖
       大巧不工，重剑无锋
       以静制动，离合参半
-    stats: "大约两百个作品，获赞两千左右"
+    stats: "作品约 197–200；获赞约 2100+；粉丝约百余（公开页数据，会变动）"
     topics:
-      - 投资相关表达与想法
-      - 与其他平台同名的「果壳小旋子」账号
+      - 身份：博士生 / 果壳小旋子（跨平台同名）
+      - 时间点：公开写明 2025 年 2 月起开始投资
+      - 投资原则：只攻不防、只买不卖；大巧不工、重剑无锋；以静制动、离合参半
+      - 内容形态：短视频为主；主页含作品 / 合集 / 短剧入口
+      - 说明：单条视频标题因平台限制未能完整归档到本站，认账号请以主页与抖音号为准
     featured:
       - title: "抖音主页"
         url: "https://www.douyin.com/user/MS4wLjABAAAAZIjQIYBGwJw831t7V74ZXyXPK40DKzdXyg6X_LWRYag"
-        note: ""
-      - title: "短链接"
+        note: "完整作品请在站内查看"
+      - title: "分享短链"
         url: "https://v.douyin.com/YX4uPRAio4g/"
-        note: ""
+        note: "手机端常用入口"
 
 groups:
   - id: create
