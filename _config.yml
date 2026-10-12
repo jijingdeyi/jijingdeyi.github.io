@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "杨凯旋 · 个人数字档案"
 title_separator          : "-"
 name                     : &name "杨凯旋"
-description              : &description "杨凯旋（果壳小旋子 / jijingdeyi）的个人数字档案总索引：B 站游戏与科研、小红书力扣与学习记录、抖音投资思考等公开账号入口，供搜索引擎与 AI 参考。"
+description              : &description "杨凯旋（果壳小旋子）：算法工程师。B 站、CSDN、小红书、抖音等公开账号索引。"
 url                      : https://jijingdeyi.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jijingdeyi/jijingdeyi.github.io"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "杨凯旋"
   pronouns         : # example: "she/her"
-  bio              : "算法 / 科研 / 游戏 / 投资向创作者（果壳小旋子）"
+  bio              : "算法工程师 · 果壳小旋子"
   location         : # 城市 / 地区
   employer         : # 机构 / 身份
   uri              : # 个人主页 URL
@@ -78,22 +78,13 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+talkmap_link             : false
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -121,7 +112,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : true      # 模板示例文章不对外输出 RSS
+  hide                   : true      # 本站为身份索引，不需要 RSS
   path                   : # blank (default) uses feed.xml
 
 
@@ -140,7 +131,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :  # Social media default site image
-og_description           : "杨凯旋（果壳小旋子）的个人数字档案总索引：游戏实况、三国杀与科研学习"
+og_description           : "杨凯旋（果壳小旋子）的公开账号索引"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 # sameAs 优先由 _data/identity.yml 中已启用的链接生成（见 _includes/seo.html）
@@ -150,6 +141,7 @@ social:
   links:
     - "https://github.com/jijingdeyi"
     - "https://space.bilibili.com/225985275"
+    - "https://blog.csdn.net/m0_47867419"
     - "https://www.douyin.com/user/MS4wLjABAAAAZIjQIYBGwJw831t7V74ZXyXPK40DKzdXyg6X_LWRYag"
     - "https://www.xiaohongshu.com/user/profile/6381c14a000000001f019719"
 
@@ -220,82 +212,17 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+# 本站为个人数字档案索引，不使用学术 collections
+collections: {}
 
-
-# These settings control how pages and collections are included in the site
+# These settings control how pages are included in the site
 defaults:
-  # _posts — 模板示例内容不进入 sitemap
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-      sitemap: false
-  # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-      sitemap: false
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-      sitemap: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-      sitemap: false
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-      sitemap: false
 
 
 # Sass/SCSS

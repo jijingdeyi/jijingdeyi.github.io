@@ -1,8 +1,11 @@
-# 顶栏导航。账号总索引在首页；学术模板栏目已移除出导航。
+# 顶栏导航
 
 main:
-  - title: "首页"
+  - title: "关于"
     url: /
 
-  - title: "索引说明"
+  - title: "账号"
+    url: /accounts/
+
+  - title: "llms.txt"
     url: /llms.txt
